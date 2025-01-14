@@ -6,42 +6,29 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"name": "callFallback",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
+				"name": "transferToFallback",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -58,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/Fallback1.sol": "SendToFallback"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

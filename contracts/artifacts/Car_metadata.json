@@ -6,13 +6,29 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_model",
+						"type": "string"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
-				"name": "count",
+				"name": "carAddr",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -20,12 +36,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "model",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -33,15 +49,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "inc",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +74,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/Contract_creates_Contract.sol": "Car"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +88,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Fallback1.sol": {
-			"keccak256": "0xe8de842c7b73101ba6befabe358f4f05ff40d96caeb96ae6cc0d12454f0029f4",
+		"contracts/Contract_creates_Contract.sol": {
+			"keccak256": "0x9375ea4a41f79835131ede44565fd30d03b618ee4cc7ac363e1f9757ac7b9220",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f232ae84c333c3eb2abe1bfd66e2c652816e6464312ec251baea3f94171b2cb9",
-				"dweb:/ipfs/QmZMzGyYAUz134wFHToU67Fp8cymjtRNRryZqzMwQqZRBW"
+				"bzz-raw://8d88465bc551359ccf2ab7ded8f19b13e765a332bbc068bb6731b6737c39c98d",
+				"dweb:/ipfs/QmPHoAMepq9GFn8G3wknVZf9UiLu7m4GBbKnyn9UnFY83D"
 			]
 		}
 	},

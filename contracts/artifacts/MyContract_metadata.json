@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
+					}
+				],
+				"name": "getCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,28 +25,15 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"name": "incrementCounter",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -58,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/Interface.sol": "MyContract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Fallback1.sol": {
-			"keccak256": "0xe8de842c7b73101ba6befabe358f4f05ff40d96caeb96ae6cc0d12454f0029f4",
+		"contracts/Interface.sol": {
+			"keccak256": "0x322289fbb0e96433a5c06f939dc6f64042478f7aa0ecae5dfd8434cd34d19404",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f232ae84c333c3eb2abe1bfd66e2c652816e6464312ec251baea3f94171b2cb9",
-				"dweb:/ipfs/QmZMzGyYAUz134wFHToU67Fp8cymjtRNRryZqzMwQqZRBW"
+				"bzz-raw://7f9b6b9d398b810f1c1577e2f9cd2d970aa8dda2b2e899b04cee1893bae17f3a",
+				"dweb:/ipfs/QmbGNhE3rwHgisWHBb9LeLMtZ5VrMSLGNzcnSYRMLdEr1S"
 			]
 		}
 	},

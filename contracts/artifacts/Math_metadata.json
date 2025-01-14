@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Library.sol": "Array"
+			"contracts/Library.sol": "Math"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

@@ -6,43 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_target",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
 			}
 		],
 		"devdoc": {
@@ -58,7 +34,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/Fallback1.sol": "FallbackInputOutput"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

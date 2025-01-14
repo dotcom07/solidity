@@ -6,41 +6,51 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "res",
+						"type": "bytes"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "Log",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "getTestData",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_fallback",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
 					}
 				],
+				"name": "test",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -58,7 +68,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/Fallback1.sol": "TestFallbackInputOutput"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

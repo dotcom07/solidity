@@ -6,8 +6,38 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "j",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					}
+				],
+				"name": "addToX",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,7 +50,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,19 +59,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Fallback1.sol": "Counter"
+			"contracts/View_Pure.sol": "ViewAndPure"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Fallback1.sol": {
-			"keccak256": "0xe8de842c7b73101ba6befabe358f4f05ff40d96caeb96ae6cc0d12454f0029f4",
+		"contracts/View_Pure.sol": {
+			"keccak256": "0x659b13762d76f610e34beb44328af6d380ea11b0a9f0acfce657429fcddbe565",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f232ae84c333c3eb2abe1bfd66e2c652816e6464312ec251baea3f94171b2cb9",
-				"dweb:/ipfs/QmZMzGyYAUz134wFHToU67Fp8cymjtRNRryZqzMwQqZRBW"
+				"bzz-raw://21529ced6ff2c70bd57699c357a0aa43ff387871e1bf0191f76b3929efb6b954",
+				"dweb:/ipfs/QmedroGR3XtjY3DuQnYMDUki2DSJA6fqVPFrHioxXFijFE"
 			]
 		}
 	},
